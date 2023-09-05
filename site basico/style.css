@@ -1,0 +1,60 @@
+body {
+  color: white; /* cor do texto */
+  background-color: black; /* cor de fundo */
+  font-family: "Times New Roman", Times, serif;
+}
+
+ul {
+  display: flex; /* coloca os elementos na mesma linha */
+  justify-content: space-between; /* cria espaço entre os itens */
+  list-style-type: none; /* remove a bolinha */
+  align-items: center; /* alinha verticalmente */
+  padding: 16px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid grey;
+}
+
+.center {
+  text-align: center;
+}
+
+h1 {
+  color: rgb(161, 177, 190);
+}
+
+footer img {
+  width: 35px;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer a {
+  margin: 10px;
+}
+
+.container {
+  padding: 0px 50px;
+}
+
+nav a:hover {
+  color: beige;
+}
+
+div small {
+  font-style: italic;
+  color: red;
+  text-align: right;
+}
