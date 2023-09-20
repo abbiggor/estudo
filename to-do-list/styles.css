@@ -6,9 +6,17 @@
     font-weight: 500;
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Impede que a barra de rolagem apareça */
+}
+
 body {
     background: url("./img/morning.jpg");
-    
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
