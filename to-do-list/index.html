@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+
+<title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <input class="input-task" type="text" placeholder="Enter task...">
+        <button class="add-task-button">Add</button>
+
+     <!-- Adicione um elemento para exibir a mensagem de erro -->
+     <p class="error-message" style="color: red; display: none;">Please enter a task.</p>
+
+         <!-- ... seu código existente ... -->
+
+            <ul class="list-tasks">
+        
+                <li class="task">
+                    <p>Stretch</p>
+                        <div class="task-icons">
+                            <img src="./img/check.svg" alt="check">
+                        <img src="./img/delete.svg" alt="delete">
+                    </div>
+            </li>
+
+            <li class="task">
+                <p>Drink water</p>
+                    <div class="task-icons">
+                        <img src="./img/check.svg" alt="check">
+                            <img src="./img/delete.svg" alt="delete">
+                    </div>
+                </li>
+        
+            </ul>
+</div>
+</body>
+<script src="./script.js"></script>
+</html>
