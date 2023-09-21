@@ -4,19 +4,21 @@ const completeList = document.querySelector('.list-tasks')
 const errorMessage = document.querySelector('.error-message'); // (ChatGPT)
 
 
-let listItems = []
+let myItemsList = []
 
-const defaultTasks = ["Stretch", "Drink water"]; // (ChatGPT)Tarefas padrão
+// * const defaultTasks = ["Stretch", "Drink water"]; // (ChatGPT)Tarefas padrão
+// * Resolvi remover as tarefas padrão pois estava conflitando com a local storage
 
 // (ChatGPT)Adicione as tarefas padrão à lista inicial
-listItems = listItems.concat(defaultTasks.map((task) => ({ task, completed: false })));
+// * myItemsList = myItemsList.concat(defaultTasks.map((task) => ({ task, completed: false })));
+
 
 
 function addNewTask () {
     const taskText = input.value.trim();
 
     if (taskText !== '') {
-        listItems.push({
+        myItemsList.push({
             task: taskText,
             completed: false
         });
@@ -36,7 +38,7 @@ function exibitTask () {
 
     let newLi = ''
 
-    listItems.forEach((taskItem, index) => {
+    myItemsList.forEach((taskItem, index) => {
         newLi = newLi + `
 
 
@@ -53,25 +55,41 @@ function exibitTask () {
 
     completeList.innerHTML = newLi
 
+    localStorage.setItem('addedItems', JSON.stringify(myItemsList))
+
+
 }
 
 function taskCompletion(index) {
-    listItems[index].completed = !listItems[index].completed
+    myItemsList[index].completed = !myItemsList[index].completed
     console.log(index)
     exibitTask()
 }
 
 function deleteItem(index){
-    listItems.splice(index,1)
+    myItemsList.splice(index,1)
     console.log(index)
 
     exibitTask();
 }
 
+function refreshItems(){
+    const localStorageTasks = localStorage.getItem('addedItems')
+
+    if(localStorageTasks){
+    myItemsList = JSON.parse(localStorageTasks)
+    }
+
+    exibitTask()
+}
+
 button.addEventListener('click', addNewTask)
+// Chame a função refreshItems() ao carregar a página
+window.addEventListener('load', refreshItems);
+
 
 
 // (ChatGPT)Chame exibitTask() para exibir as tarefas padrão inicialmente
-exibitTask();
+//exibitTask();
 
 

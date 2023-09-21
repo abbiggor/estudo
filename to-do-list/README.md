@@ -10,7 +10,7 @@ Abaixo, documentei os itens em que busquei apoio na ferramenta de inteligência 
 
 
 
-
+(Resolvi remover as tarefas padrão, mas deixo documentado o processo que tive para implementá-las de forma funcional)
 Estava tendo problemas com as tasks padrão, para que fossem exibidas e respondessem normalmente como as tarefas adicionadas. Usei da ajuda do ChatGPT que me trouxe, em resumo, a seguinte solução:
 
 * Linha do script.js de número 12:

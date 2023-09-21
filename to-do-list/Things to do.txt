@@ -1,7 +1,4 @@
-* Input e add button devem ficar abaixo das tarefas.
 * Criar 3 divs separadas, especificando tarefas do turno da manhã, tarde e noite.
-* Adicionar mais tarefas padrão (consultar planner).
-* Melhorar a imagem de fundo.
 * Fazer com que a imagem de fundo alterne entre um cenário matutino, vespertino e noturno, de acordo com o horário atual.
 * Deixar o fundo com blur.
 * Adicionar um relógio analógico ao canto da tela. (?)

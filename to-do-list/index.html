@@ -7,14 +7,17 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="./img/label.png">
 
 
-<title>ToDo List</title>
+<title>My tasks</title>
 </head>
 <body>
+<main>
+
     <div class="container">
-        <input class="input-task" type="text" placeholder="Enter task...">
-        <button class="add-task-button">Add</button>
+        <h2>Today's tasks</h2>
+
 
      <!-- Adicione um elemento para exibir a mensagem de erro -->
      <p class="error-message" style="color: red; display: none;">Please enter a task.</p>
@@ -22,25 +25,13 @@
          <!-- ... seu código existente ... -->
 
             <ul class="list-tasks">
-        
-                <li class="task">
-                    <p>Stretch</p>
-                        <div class="task-icons">
-                            <img src="./img/check.svg" alt="check">
-                        <img src="./img/delete.svg" alt="delete">
-                    </div>
-            </li>
-
-            <li class="task">
-                <p>Drink water</p>
-                    <div class="task-icons">
-                        <img src="./img/check.svg" alt="check">
-                            <img src="./img/delete.svg" alt="delete">
-                    </div>
-                </li>
-        
             </ul>
+            <input class="input-task" type="text" placeholder="Enter task...">
+            <button class="add-task-button">Add</button>
 </div>
+
+
+</main>
 </body>
 <script src="./script.js"></script>
 </html>

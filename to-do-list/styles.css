@@ -6,6 +6,10 @@
     font-weight: 500;
 }
 
+main {
+    display: flex;
+}
+
 html, body {
     height: 100%;
     margin: 0;
@@ -19,6 +23,12 @@ body {
     background-repeat: no-repeat;
 }
 
+h2 {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    color: #222323;
+}
 
 
 .container {
@@ -30,20 +40,19 @@ body {
 }
 
 .input-task {
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
     width: 200px;
-    height: 20px;
+    height: 25px;
     padding: 10px;
-    
-
 }
 
 .add-task-button {
+    margin-top: 15px;
     border: none;
     border-radius: 5px;
-    height: 20px;
-    margin-top: 2.5px;
+    height: 25px;
     background-color: #003329;
     color: white;
     padding: 0px 10px;
@@ -62,7 +71,7 @@ body {
 .list-tasks {
     list-style: none;
     width: 100%;
-    margin-top: 17px;
+    margin-top: 5px;
 }
 
 .task {
